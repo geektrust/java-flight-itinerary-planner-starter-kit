@@ -24,7 +24,7 @@ public class Main {
         
         switch (cmdName) {
             case "ADD_FLIGHT":
-                planner.addFlight(new Contact(cmd[1], cmd[2], Double.parseDouble(cmd[3]), Integer.parseInt(cmd[4])));
+                planner.addFlight(new Flight(cmd[1], cmd[2], Double.parseDouble(cmd[3]), Integer.parseInt(cmd[4])));
                 break;
             default:
                 break;

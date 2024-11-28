@@ -3,13 +3,17 @@ import java.util.List;
 
 class FlightItineraryPlanner {
 
-    // Adds a flight and its return counterpart
-    public void addFlight(String departure, String arrival, double cost, int seats) {
-        System.out.println(departure, arrival, cost, seats);
+    private List<Flight> flights;
+
+    public FlightItineraryPlanner() {
+        flights = new ArrayList<>();
     }
 
-    // Finds all itineraries within the budget
-    public List<String> findAllItineraries(String start, String end, double budget) {
+    public void addFlight(Flight flight) {
+        flights.add(flight);
+        System.out.println(flight);
     }
 
+
+    // Other methods like findAllItineraries will be implemented here in the future
 }
