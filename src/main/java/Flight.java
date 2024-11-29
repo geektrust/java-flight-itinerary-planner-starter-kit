@@ -1,23 +1,24 @@
+
 class Flight {
-    String departure;
-    String arrival;
+    String departure_city;
+    String arrival_city;
     double cost;
     int seats;
 
-    public Flight(String departure, String arrival, double cost, int seats) {
-        this.departure = departure;
-        this.arrival = arrival;
+    public Flight(String departure_city, String arrival_city, double cost, int seats) {
+        this.departure_city = departure_city;
+        this.arrival_city = arrival_city;
         this.cost = cost;
         this.seats = seats;
     }
 
      // Getters
      public String getDeparture() {
-        return departure;
+        return departure_city;
     }
 
     public String getArrival() {
-        return arrival;
+        return arrival_city;
     }
 
     public double getCost() {
@@ -29,12 +30,12 @@ class Flight {
     }
 
     // Setters
-    public void setDeparture(String departure) {
-        this.departure = departure;
+    public void setDeparture(String departure_city) {
+        this.departure_city = departure_city;
     }
 
-    public void setArrival(String arrival) {
-        this.arrival = arrival;
+    public void setArrival(String arrival_city) {
+        this.arrival_city = arrival_city;
     }
 
     public void setCost(double cost) {
