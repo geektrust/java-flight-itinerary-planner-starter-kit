@@ -2,7 +2,7 @@
 
 class FlightItineraryPlanner {
 
-    public void addFlight(String departure_city, String arrival_city, double cost, int seats) {
+    public void addFlight(String departureCity, String arrivalCity, double cost, int seats) {
     }
 
 
