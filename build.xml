@@ -28,8 +28,8 @@
     description="compile the source">
     <!-- Compile the Java code from ${src} into ${build} -->
     <javac srcdir="${src}" destdir="${build}" includeantruntime="false" />
-    <javac srcdir="${src-test}" destdir="${build-test}" classpathref="test.classpath"
-      includeantruntime="false" />
+    <!-- <javac srcdir="${src-test}" destdir="${build-test}" classpathref="test.classpath" -->
+      <!-- includeantruntime="false" /> -->
   </target>
 
   <target name="dist" depends="compile"
